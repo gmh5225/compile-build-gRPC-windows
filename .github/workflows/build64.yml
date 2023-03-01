@@ -13,6 +13,7 @@ jobs:
       with:
         repository: gmh5225/grpc
         ref: master
+        submodules: 'recursive'
   
     - name: Build
       run: |
