@@ -6,6 +6,7 @@
 
 ## Build gRPC
 ```
+git clone —-recursive https://github.com/gmh5225/grpc
 md .build
 cd .build
 cmake .. -DgRPC_BUILD_TESTS=OFF -DCMAKE_INSTALL_PREFIX=E:\network\grpc_install
