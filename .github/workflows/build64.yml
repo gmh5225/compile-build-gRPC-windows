@@ -28,6 +28,6 @@ jobs:
       with:
         name: grpc-64
         path: |
-          grpc_install/*
+          .build/grpc_install/*
 
         
