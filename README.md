@@ -1,4 +1,4 @@
-# compile-gRPC-windows
+# compile-build-gRPC-windows
 
 - https://github.com/grpc/grpc/blob/master/BUILDING.md
 - https://grpc.io/docs/languages/cpp/quickstart
