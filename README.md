@@ -1,5 +1,7 @@
 # compile-gRPC-windows
 
+- https://github.com/grpc/grpc/blob/master/BUILDING.md
+
 ```
 md .build
 cd .build
