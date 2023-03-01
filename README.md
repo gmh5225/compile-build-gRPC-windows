@@ -15,6 +15,7 @@ cmake --install ../.build
 
 ## Build the example
 ```
+git clone --recursive https://github.com/gmh5225/grpc
 cd examples/cpp/helloworld
 md .build
 cd .build
