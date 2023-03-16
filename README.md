@@ -14,7 +14,7 @@ cmake --build . --config Release
 cmake --install ../.build
 ```
 
-## Build the example
+## Build the example from grpc
 ```
 git clone --recursive https://github.com/gmh5225/grpc
 cd examples/cpp/helloworld
