@@ -25,6 +25,6 @@ cmake --build . --config Release
 ```
 
 ## Build the example from this repo
-```
-Run build-win-64.bat
-```
+- Download [compiled gprc binary](https://github.com/gmh5225/compile-build-gRPC-windows/releases/tag/gmh-740932c899a3a978f75bfa8092e7b02f1740bf62)
+- Put it into E:\network\grpc_install
+- Run build-win-64.bat
