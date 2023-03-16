@@ -30,4 +30,17 @@ jobs:
         path: |
           .build/grpc_install/*
 
+    - name: archive
+      run:
+        7z a grpc-64-gmh.zip .build/grpc_install/*
+    
+    - name: Release
+      uses: softprops/action-gh-release@v1
+      if: ${{ startsWith(github.ref, 'refs/tags/') }}
+      with:
+        prerelease: ${{ !startsWith(github.ref, 'refs/tags/v') || contains(github.ref, '-pre') }}
+        files: grpc-64-gmh.zip
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
         
