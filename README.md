@@ -23,3 +23,8 @@ cd .build
 cmake -DCMAKE_PREFIX_PATH=E:\network\grpc_install ../
 cmake --build . --config Release
 ```
+
+## Build the example from this repo
+```
+Run build-win-64.bat
+```
