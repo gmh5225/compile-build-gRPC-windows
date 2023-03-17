@@ -9,7 +9,11 @@
 git clone --recursive https://github.com/gmh5225/grpc
 md .build
 cd .build
-cmake .. -DgRPC_BUILD_TESTS=OFF -DCMAKE_INSTALL_PREFIX=E:\network\grpc_install
+
+cmake .. -DgRPC_BUILD_TESTS=OFF -DCMAKE_INSTALL_PREFIX=E:\network\grpc_install 
+or
+cmake .. -DgRPC_BUILD_TESTS=OFF -DCMAKE_INSTALL_PREFIX=E:\network\grpc_install_llvm -TLLVM-MSVC_v143
+
 cmake --build . --config Release
 cmake --install ../.build
 ```
@@ -20,7 +24,11 @@ git clone --recursive https://github.com/gmh5225/grpc
 cd examples/cpp/helloworld
 md .build
 cd .build
+
 cmake -DCMAKE_PREFIX_PATH=E:\network\grpc_install ../
+or
+cmake -DCMAKE_PREFIX_PATH=E:\network\grpc_install_llvm ../
+
 cmake --build . --config Release
 ```
 
